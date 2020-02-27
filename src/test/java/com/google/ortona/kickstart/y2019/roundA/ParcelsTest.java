@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -73,19 +72,11 @@ public class ParcelsTest {
     }
     final long curTime = System.currentTimeMillis();
     allInputs.forEach(i -> {
-      printInput(i);
       SOLVER.minimumDeliveryTime(i);
-      System.out.println("------------------------");
     });
     final long finalTime = System.currentTimeMillis() - curTime;
     // check it took less than 15 seconds
     Assert.assertTrue((finalTime / 1000.) < 15);
-  }
-
-  private void printInput(int[][] input) {
-    for (final int[] oneRow : input) {
-      System.out.println(Arrays.toString(oneRow));
-    }
   }
 
   private int[][] generateRandomGrid(int row, int col) {
