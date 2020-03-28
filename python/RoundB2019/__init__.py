@@ -1,1 +1,0 @@
-from .BuildingPalindromes import number_palindromes

@@ -1,5 +1,5 @@
 from unittest import TestCase
-from RoundA2020 import pick_plates
+from y2020.rounda import pick_plates
 from random import randint
 
 

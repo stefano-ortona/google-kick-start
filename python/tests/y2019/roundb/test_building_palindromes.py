@@ -1,4 +1,4 @@
-from RoundB2019 import number_palindromes
+from y2019.roundb import number_palindromes
 from unittest import TestCase
 
 

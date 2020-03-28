@@ -1,5 +1,5 @@
 from unittest import TestCase
-from RoundA2020 import min_difficulty
+from y2020.rounda import min_difficulty
 
 
 class TestWorkout(TestCase):
