@@ -13,7 +13,12 @@ class TestMeetParty(TestCase):
         self.assertEqual([6, -1, 2], find_best_point([[-1, 2, -1, 2], [0, 0, 0, 0], [1, 3, 1, 3]]))
 
     def test_find_best_point_two_squares(self):
-        self.assertEqual([12, 1, 1], find_best_point([[0, 0, 2, 2]]))
+        self.assertEqual([7677500, 10250, -49950], find_best_point([[-1000, 1000, -1000, 1000],
+                                                      [10000, -50000, 10500, -49900]]))
+
+    def test_find_best_point_four_squares(self):
+        self.assertEqual([2903, 24, 12], find_best_point([[0, 0, 5, 5], [8, 40, 10, 44], [20, 10, 28, 12],
+                                                                    [30, 20, 34, 29]]))
 
     def test_find_best_point_six_squares(self):
         squares = [[468, 377, 468, 377], [839, -105, 839, -105], [-871, 487, -871, 487], [-307, 651, -307, 651],
